@@ -1,0 +1,485 @@
+
+
+body {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(28, 28, 28, 1);
+    z-index: 1000 ;
+}
+
+.header a{
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+#judul {
+    color: rgba(145, 128, 74, 1);
+    font-size: 1rem;
+}
+
+#judul2 {
+    color: white;
+    font-size:1rem ;
+    padding: 30px;
+}
+
+#judul2:hover {
+    color: rgba(145, 128, 74, 1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    
+}
+
+.dropdown-isi {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-isi a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+.dropdown-isi a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-isi {
+    display: block;
+}
+
+.dropbtn img {
+    margin-left: 8px; 
+    width: 10px;
+    height: 12px; 
+    color: white;
+    
+}
+
+
+.dropbtn {
+    background-color: rgba(28, 28, 28, 1);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.dropbtn:hover {
+    background-color: #B89B58; 
+}
+
+.tombolregister {
+    background-color: #B89B58; 
+    color: white;
+    border: none; 
+    border-radius: 25px;
+    padding: 0 20px;
+    cursor: pointer; 
+    /* margin-bottom: 1rem;
+    margin-top: 1rem; */
+    padding: 10px 30px;
+    transition: all 0.25s ease-in-out;
+}
+
+.tombolregister:hover {
+    background-color: #A88547; 
+}
+
+#register {
+    color: white;
+    font-size: 1rem;
+}
+
+.banner {
+    background-color: rgba(28, 28, 28, 1);
+    display: flex;
+    flex-direction: row;
+    padding-left: 132px;
+    padding-right: 132px;
+}
+
+.banKiri {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-right: 63px;
+    padding-top: 143px;
+    margin: 0 auto;
+}
+
+.carousel {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-image-container {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.carousel-image {
+    float: left;
+}
+
+#banPict1 {
+    width: 650px;
+    height: 600px;
+    object-fit: cover;
+}
+
+#bantext1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+}
+
+#bantext2 {
+    font-size: 80px;
+    color: rgba(255, 229, 146, 1);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#bantext3 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.satu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1155px;
+    height: 350px;
+}
+
+.satu1 {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+}
+
+#satuA {
+    color: rgba(28, 28, 28, 1);
+    padding-right: 1rem;
+    font-size: 50px;
+}
+
+#satuW {
+    color: rgba(145, 128, 74, 1);
+    font-size: 50px;
+}
+
+#satuT {
+    color: rgba(28, 28, 28, 1);
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+.product {
+    flex: 0 0 33.33%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+.information {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.product .information {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover .information {
+    opacity: 1;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+
+}
+
+.duaCar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#mobil1 {
+    width: 344px;
+    height: 240px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.bawah {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: fit-content;
+    justify-content: space-between;
+    background-color: rgba(28, 28, 28, 1);
+}
+
+.bawah a {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+}
+
+.css p {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+   
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services a {
+    text-decoration: none;
+    font-size: medium;
+    transition: all 0.25s ease-in-out;
+}
+
+.services a:hover {
+    color:  rgba(145, 128, 74, 1);
+
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.phone img {
+    width: 7%;
+    height: 4vh;
+}
+
+.phone p {
+    margin-left: 0.5rem;
+}
+
+.followus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fhr1 {
+    border: 1px solid white;
+    width: 90vw;
+  
+}
+
+.cr {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    background-color: rgba(28, 28, 28, 1);
+    width: 100%;
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+    .header {
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: rgba(28, 28, 28, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .banner {
+        background-color: rgba(28, 28, 28, 1);
+        display: flex;
+        flex-direction: column;
+        padding-left: 132px;
+        padding-right: 132px;
+    }
+
+    .satu {
+        width: 100%;
+    }
+
+    .satu1 {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    #satuT {
+        margin: auto;
+    }
+
+    .duaCar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bawah {
+        flex-direction: column;
+        background-color: rgba(28, 28, 28, 1);
+    }
+
+    .phone {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 767px) { 
+    .header {
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: rgba(28, 28, 28, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .banner {
+        background-color: rgba(28, 28, 28, 1);
+        display: flex;
+        flex-direction: column;
+        padding-left: 132px;
+        padding-right: 132px;
+    }
+
+    .satu {
+        width: 100%;
+    }
+
+    .satu1 {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    #satuT {
+        margin: auto;
+    }
+
+    .duaCar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bawah {
+        flex-direction: column;
+        background-color: rgba(28, 28, 28, 1);
+    }
+
+    .phone {
+        justify-content: center;
+    }
+
+}

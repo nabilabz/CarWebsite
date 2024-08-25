@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wHeel Hub</title>
+    <link rel="stylesheet" href="../styles/register-style.css">
+</head>
+<body>
+        <div class="regist-container">
+            <h1>Welcome to <span class="highlight">wHeel Hub!</span></h1>
+            <h2>Create an account</h2>
+            <form id="registrationForm" action="index.html" method="get" class="form">
+                <!-- Username -->
+                <div class="form-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <!-- Email -->
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <!-- Password -->
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <!-- Confirm Password -->
+                <div class="form-field">
+                    <label for="confirmpass">Confirm Password</label>
+                    <input type="password" id="confirmpass" placeholder="Enter your confirm password">
+                </div>
+                <!-- Gender -->
+                <div class="form-field">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="gender" value="female">Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="male">Male
+                        </label>
+                    </div>
+                </div>
+                <!-- Date of Birth -->
+                <div class="form-field">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+                <!-- Terms and Conditions -->
+                <div class="form-field">
+                    <label>
+                        <input type="checkbox" id="agree" name="agree"> I agree with the <a href="">terms and conditions</a>
+                    </label>
+                </div>
+                <!-- Register Button -->
+                <button type="submit">REGISTER</button>
+            </form>
+        </div>
+        <script src="../script/register-script.js"></script>
+</body>
+</html>

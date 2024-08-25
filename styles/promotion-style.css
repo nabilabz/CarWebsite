@@ -1,0 +1,515 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    color: white;
+    position: fixed; 
+    z-index: 1000; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    background-color: rgba(28, 28, 28, 1);
+}
+
+.header a{
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+
+#judul {
+    color: rgba(145, 128, 74, 1);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#judul2 {
+    color: white;
+    font-size:1rem ;
+    padding: 30px;
+    
+}
+
+#judul2:hover {
+    color: rgba(145, 128, 74, 1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    
+}
+
+
+.dropdown-isi {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-isi a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+.dropdown-isi a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-isi {
+    display: block;
+}
+
+.dropbtn img {
+    margin-left: 8px; 
+    width: 10px;
+    height: 12px; 
+    color: white;
+    
+}
+
+
+.dropbtn {
+    background-color: rgba(28, 28, 28, 1);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.dropbtn:hover {
+    background-color: #B89B58; 
+}
+
+
+.tombolregister {
+    background-color: #B89B58; 
+    color: white;
+    border: none; 
+    border-radius: 25px;
+    padding: 0 20px;
+    cursor: pointer; 
+    /* margin-bottom: 1rem;
+    margin-top: 1rem; */
+    padding: 10px 30px;
+    transition: all 0.25s ease-in-out;
+}
+
+.tombolregister:hover {
+    background-color: #A88547; 
+}
+
+#register {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.banner-container {
+    position: relative; 
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner pre, .banner .liness {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 0;
+    color: white;
+    z-index: 2; 
+}
+
+.banner pre {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.banner .liness img {
+    width: 200px; 
+}
+
+/* .satu {
+    background-image: url(/Assets/promotion_banner/2024_corola_hatchback.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+#satu1 {
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#satuhr1 {
+    border: 4px solid rgba(145, 128, 74, 1);
+    width: 150px;
+    border-radius: 100px;
+    margin-top: auto;
+} */
+
+.promosatu {
+    display: flex;
+    flex-direction: row;
+    margin: 90px 90px;
+    justify-self: center;
+    width: auto;
+    justify-content: space-around;
+}
+
+#gambarp1 {
+    width: 490px;
+    height: 400px;
+    border-radius: 40px;
+    margin-right: 79px;
+    object-fit: cover;
+}
+
+.p1Konten {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#psT1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(215, 25, 33, 1);
+    font-family: 'Inter', sans-serif;
+}
+
+#psT2 {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+#psB1 {
+    background-color: #B89B58; 
+    color: white;
+    width: 282px;
+    height: 56px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    border: 0px;
+    transition: all 0.25s ease-in-out;
+}
+
+#psB1:hover {
+    background-color: #A88547; 
+}
+
+#pdT1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(0, 49, 107, 1);
+    font-family: 'Inter', sans-serif;
+}
+
+#pdT2 {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+.promodua {
+    display: flex;
+    flex-direction: row;
+    margin: 90px 90px;
+    justify-self: center;
+    width: auto;
+}
+
+#gambarp2 {
+    width: 490px;
+    height: 400px;
+    border-radius: 40px;
+    margin-left: 79px;
+    object-fit: cover;
+}
+
+.p2Konten {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#ptT1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(150, 118, 98, 1);
+    font-family: 'Inter', sans-serif;
+}
+
+#ptT2 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+#ptT3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.promotiga {
+    display: flex;
+    flex-direction: row;
+    margin: 90px 90px;
+    justify-self: center;
+}
+
+.bawah {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: fit-content;
+    justify-content: space-between;
+    background-color: rgba(28, 28, 28, 1);
+}
+
+.bawah a {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+}
+
+.css p {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+   
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services a {
+    text-decoration: none;
+    font-size: medium;
+    transition: all 0.25s ease-in-out;
+}
+
+.services a:hover {
+    color:  rgba(145, 128, 74, 1);
+
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.phone img {
+    width: 7%;
+    height: 4vh;
+}
+
+.phone p {
+    margin-left: 0.5rem;
+}
+
+.followus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fhr1 {
+    border: 1px solid white;
+    width: 90vw;
+  
+}
+
+.cr {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    background-color: rgba(28, 28, 28, 1);
+    width: 100%;
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 1200px) {
+    .p1, .p2, .p3 {
+        display: flex;
+        flex-direction: row;
+    }    
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .p1, .p2, .p3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header {
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: rgba(28, 28, 28, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .bawah {
+        flex-direction: column;
+        background-color: rgba(28, 28, 28, 1);
+    }
+   
+    .promosatu, .promodua, .promotiga {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .p1Konten, .p2Konten, .p3Konten {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #gambarp1 {
+        width: 490px;
+        height: 400px;
+        border-radius: 40px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    #gambarp2 {
+        width: 490px;
+        height: 400px;
+        border-radius: 40px;
+        margin: 0;
+    }
+
+    .phone {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .p1, .p2, .p3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header {
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: rgba(28, 28, 28, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .bawah {
+        flex-direction: column;
+        background-color: rgba(28, 28, 28, 1);
+    }
+   
+    .promosatu, .promodua, .promotiga {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .p1Konten, .p2Konten, .p3Konten {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #gambarp1 {
+        width: 490px;
+        height: 400px;
+        border-radius: 40px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    #gambarp2 {
+        width: 490px;
+        height: 400px;
+        border-radius: 40px;
+        margin: 0;
+    }
+
+    .phone {
+        justify-content: center;
+    }
+
+}

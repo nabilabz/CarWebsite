@@ -1,0 +1,541 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+body p, h1 {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(28, 28, 28, 1);
+}
+
+.header a{
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+
+#judul {
+    color: rgba(145, 128, 74, 1);
+    font-size: 1rem;
+}
+
+#judul2 {
+    color: white;
+    font-size: 1rem;
+    padding: 30px;
+}
+
+#judul2:hover {
+    color: rgba(145, 128, 74, 1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    
+}
+
+.dropdown-isi {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-isi a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+.dropdown-isi a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-isi {
+    display: block;
+}
+
+.dropbtn img {
+    margin-left: 8px; 
+    width: 10px;
+    height: 12px; 
+    color: white;
+    
+}
+
+
+.dropbtn {
+    background-color: rgba(28, 28, 28, 1);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.dropbtn:hover {
+    background-color: #B89B58; 
+}
+
+.tombolregister {
+    background-color: #B89B58; 
+    color: white;
+    border: none; 
+    border-radius: 25px;
+    padding: 0 20px;
+    cursor: pointer; 
+    padding: 10px 30px;
+    transition: all 0.25s ease-in-out;
+}
+
+.tombolregister:hover {
+    background-color: #A88547; 
+}
+
+#register {
+    color: white;
+    font-size: 1rem;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.satu {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.satu img {
+    width: 30%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 8%;
+    transition: all 0.25s ease-in-out;
+}
+
+.satu img:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tulisansatu {
+    color: black;
+    padding-left: 3rem;
+    text-align: justify;
+}
+
+.tulisansatu h1 {
+    color: black;
+    transition: all 0.25s ease-in-out;
+}
+
+.tulisansatu h1:hover {
+    color: rgba(145, 128, 74, 1);
+    
+}
+
+.ratingsatu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cs h1, .wv h1, .yws h1 {
+    color: rgba(145, 128, 74, 1);
+    margin-bottom: -0.8rem;
+}
+
+.cs p, .wv p, .yws p {
+    color: black;
+}
+
+.dua {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    background-color: rgba(28, 28, 28, 1);
+    justify-content: space-between;
+}
+
+.dua img {
+    width: 30%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 8%;
+}
+
+
+.tulisandua {
+    color: white;
+    text-align: justify;
+}
+
+.tulisandua h2 {
+    color: #B89B58;
+    padding-bottom: 2rem;
+}
+
+.dua h1 {
+    font-size: 2.5rem;
+}
+
+.dua p {
+    max-width: 600px;
+}
+
+.tiga {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -11rem; 
+}
+
+.gambartiga {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.tigautama {
+    padding: 0 15rem;
+}
+
+.tigautama p {
+    margin: 2rem 0 4rem;
+    font-size: 1rem;
+}
+
+.tigautama h1 {
+    font-size: 2.7rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.tigautama h1:hover {
+    color: rgba(145, 128, 74, 1);
+    
+}
+
+.medali, .ngasih, .lampu {
+    border: 1px black solid;
+    border-radius: 10%;
+    height: 30vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    transition: all 0.25s ease-in-out;
+    margin: 10px;
+}
+
+.medali:hover, .ngasih:hover, .lampu:hover {
+    transform: scale(1.1);
+}
+
+
+.empat {
+    text-align: center;
+    background-color: white;
+    padding: 3rem;
+}
+
+.gambarempat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.empat h1 {
+    font-size: 3rem;
+    margin: 10rem 0 4rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.empat h1:hover {
+    color: rgba(145, 128, 74, 1);
+}
+
+
+
+.gambarempat img {
+    width: 30%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 8%;
+    margin-bottom: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.gambarempat img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+}
+
+.lima {
+    font-family: 'Inter', sans-serif;
+    margin: 50px auto; 
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.lima h2 {
+    font-size: 2.7rem;
+    transition: all 0.25s ease-in-out;
+    text-align: center;
+}
+
+.lima h2:hover {
+    color: rgba(145, 128, 74, 1);   
+}
+
+#location {
+    width: 100%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.bawah {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: fit-content;
+    justify-content: space-between;
+    background-color: rgba(28, 28, 28, 1);
+}
+
+.bawah a {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+}
+
+.css p {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+   
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services a {
+    text-decoration: none;
+    font-size: medium;
+    transition: all 0.25s ease-in-out;
+}
+
+.services a:hover {
+    color:  rgba(145, 128, 74, 1);
+
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.phone img {
+    width: 7%;
+    height: 4vh;
+}
+
+.phone p {
+    margin-left: 0.5rem;
+}
+
+.followus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fhr1 {
+    border: 1px solid white;
+    width: 90vw;
+  
+}
+
+.cr {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    background-color: rgba(28, 28, 28, 1);
+    width: 100%;
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header, .satu, .dua, .tiga, .empat, .footer {
+    max-width: 100vw;
+}
+
+@media (min-width: 1200px) {
+    .satu, .dua, .tiga {
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .satu, .dua, .tiga, .empat {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: rgba(28, 28, 28, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .bawah {
+        flex-direction: column;
+        background-color: rgba(28, 28, 28, 1);
+    }
+
+    .tulisansatu, .tulisandua, .tigautama, .empat {
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+    .dua p, .tigautama p {
+        max-width: none;
+    }
+
+    .tiga {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dua p {
+        max-width: none;
+    }
+
+    .phone {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: rgba(28, 28, 28, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .bawah {
+        flex-direction: column;
+        background-color: rgba(28, 28, 28, 1);
+    }
+
+    .phone {
+        justify-content: center;
+    }
+
+    .satu, .dua {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .tiga {
+        padding: 1.5rem;
+    }
+
+    .tulisansatu, .tulisandua {
+        text-align: center;
+        padding: 0;
+    }
+
+    .tigautama {
+        padding: 0;
+    }
+
+    .gambarempat {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gambarempat img {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
+

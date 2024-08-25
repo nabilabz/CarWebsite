@@ -1,0 +1,134 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-image: url(/image/register/2024_prius_prime\ 1.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.regist-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(21, 20, 26, 0.8);
+    border-radius: 10px;
+    height: 100%;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+}
+
+.regist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #91804a;
+}
+
+h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 13px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+a {
+    color: #91804a;
+    text-decoration: none;
+}
+
+a.disabled-link {
+    pointer-events: none;
+}
+
+button {
+    padding: 10px 20px;
+    transition: all 0.25s ease-in-out;
+    background-color: #91804a;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 515px;
+}
+
+button:hover {
+    background-color: #655a34;
+}
+
+@media (max-width: 768px) {
+    .regist-container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(21, 20, 26, 0.8);
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+}
